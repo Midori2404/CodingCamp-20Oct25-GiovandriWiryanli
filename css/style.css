@@ -16,7 +16,7 @@ hr {
   width: 75px;
   background-color: darkgrey;
   border-radius: 50%;
-  background-image: url(Assets/G\ Logo.png);
+  background-image: url(../Assets/G_Logo.png);
   background-size: cover;
   background-position: center;
 }
