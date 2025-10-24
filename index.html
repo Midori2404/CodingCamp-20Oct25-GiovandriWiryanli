@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovandri Creative Studio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    
+    <!-- Header -->
+    <header class="main-header flex flex-col md:flex-row justify-between items-center p-4 bg-green-900 text-white">
+        <div class="main-logo mx-auto md:mx-0"></div>
+        <nav class="flex flex-wrap justify-center gap-2 mt-3 md:mt-0">
+            <a class="nav-link" href="#profile-section">Our Profile</a>
+            <a class="nav-link" href="#services-section">Services</a>
+            <a class="nav-link" href="#headquarters-section">Our Headquarter</a>
+            <a class="nav-link" href="#message-section">Message Us</a>
+        </nav>
+    </header>
+
+    <main> 
+        <!-- Home -->
+        <section id="home-section" class="hero-section p-6 bg-white text-center">
+            <h1 class="text-4xl font-bold text-green-700 mb-4">
+                <span id="greet-name"></span>Welcome to Giovandri Creative Studio
+            </h1>
+
+            <p class="text-xl text-gray-700 italic mb-6">
+                “Innovating the future through creative technology and design.”
+            </p>
+
+            <div class="photo-banner mx-auto w-full max-w-[1366px]">
+                <img src="/Assets/HomeBanner.jpg" 
+                    alt="Creative Studio Banner"
+                    class="h-[578px] w-full object-cover rounded-lg shadow-md">
+            </div>
+        </section>
+
+        <hr class="my-6">
+
+        <!-- Our Profile -->
+        <section id="profile-section" class="profile-section p-6">
+            <h2>Our Profile</h2>
+
+            <div class="photo-banner mx-auto mb-6 w-full max-w-[1366px]">
+                <img src="/Assets/Office.jpg" 
+                    alt="Company Team" 
+                    class="w-full h-[400px] object-cover rounded-lg shadow-md">
+            </div>
+
+            <div class="about-company mb-6">
+                <h3>About Our Company</h3>
+                <p class="text-lg leading-relaxed">Giovandri Creative Studio is a software development company focused on creating interactive digital experiences. Our team specializes in game development, web design, and user-centered applications that blend creativity and technology.</p>
+            </div>
+
+            <div class="vision-mission grid md:grid-cols-2 gap-6">
+                <div class="vision bg-white p-4 rounded-lg shadow-md border-l-4 border-emerald-600">
+                    <h4>Our Vision</h4>
+                    <p class="text-base leading-relaxed">To become a leading creative technology company that inspires innovation and delivers meaningful digital experiences worldwide.</p>
+                </div>
+
+                <div class="mission bg-white p-4 rounded-lg shadow-md border-l-4 border-emerald-600">
+                    <h4>Our Mission</h4>
+                    <ul class="list-disc list-inside text-base leading-relaxed">
+                        <li>Deliver high-quality software and design solutions.</li>
+                        <li>Empower clients through innovation and collaboration.</li>
+                        <li>Promote sustainability and creativity in technology.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-6">
+
+        <!-- Our Services -->
+        <section id="services-section" class="services-section p-6">
+            <h2>Our Services</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                At Giovandri Creative Studio, we provide a range of digital solutions designed to bring ideas to life and support business growth.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="services-card">
+                    <h4>Game Development</h4>
+                    <p>We create immersive and interactive game experiences using Unity and Unreal Engine, blending storytelling with gameplay innovation.</p>
+                </div>
+
+                <div class="services-card">
+                    <h4>Web & App Design</h4>
+                    <p>We design and develop modern, responsive websites and mobile apps that enhance user engagement and deliver seamless functionality.</p>
+                </div>
+
+                <div class="services-card">
+                    <h4>Creative Software Solutions</h4>
+                    <p>From interactive media to educational software, we craft tailored solutions that combine creativity, usability, and technology.</p>
+                </div>
+
+                <div class="services-card">
+                    <h4>UI/UX Design</h4>
+                    <p>We craft intuitive and visually appealing user interfaces focused on accessibility, usability, and engaging digital experiences.</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <!-- Our Headquarters -->
+        <section id="headquarters-section" class="headquarters-section p-6 bg-white">
+            <h2>Our Headquarters</h2>
+            <p class="text-lg leading-relaxed mb-6 text-center">
+                We operate from multiple strategic locations to serve clients across Indonesia.
+            </p>
+
+            <div class="headquarters-grid">
+                <div class="hq-item">
+                    <div class="hq-circle">
+                    <img src="/Assets/Jakarta.jpg" alt="Jakarta">
+                    </div>
+                    <p>Jakarta</p>
+                </div>
+
+                <div class="hq-item">
+                    <div class="hq-circle">
+                    <img src="/Assets/Bandung.jpg" alt="Bandung">
+                    </div>
+                    <p>Bandung</p>
+                </div>
+
+                <div class="hq-item">
+                    <div class="hq-circle">
+                    <img src="/Assets/Surabaya.jpg" alt="Surabaya">
+                    </div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="my-6">
+
+        <!-- Message Us -->
+        <section id="message-section" class="message-section p-6">
+        <h2 class="text-3xl font-bold text-emerald-700 mb-4">Message Us</h2>
+        <p class="text-lg leading-relaxed mb-4">Feel free to reach out for collaborations or inquiries.</p>
+
+        <div class="message-container">
+            <!-- Form -->
+            <form id="contact-form" class="message-form">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name-input" name="name" required>
+            <p id="name-error" class="error-text hidden"></p>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email-input" name="email" required>
+            <p id="email-error" class="error-text hidden"></p>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone-input" name="phone" pattern="[0-9]{10,15}" required>
+            <p id="phone-error" class="error-text hidden"></p>
+
+            <label for="message">Message:</label>
+            <textarea id="message-input" name="message" rows="4" required></textarea>
+            <p id="message-error" class="error-text hidden"></p>
+            
+            <button type="button" onclick="ValidateForm();" class="bg-green-700 hover:bg-green-800 text-white p-2 rounded transition">
+                Send Message
+            </button>
+
+            </form>
+
+            <!-- Display Section -->
+            <div id="submitted-data" class="submitted-data hidden">
+            <h3>Thank you <span id="show-name"></span>, your message has been submitted!</h3>
+            <p><strong>Email:</strong> <span id="show-email">-</span></p>
+            <p><strong>Phone:</strong> <span id="show-phone">-</span></p>
+            <p><strong>Message:</strong> <span id="show-message">-</span></p>
+            </div>
+        </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="text-sm">&copy; 2025 Giovandri Creative Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
